@@ -1,0 +1,128 @@
+.footerContainer {
+  background-color: #1c1e22; 
+  color: #a0a0a0; 
+  padding: 4rem 3rem 1.5rem 3rem;
+      margin: 50px 0px 0px 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.footerColumn {
+  padding-right: 1rem; 
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.footerLogo svg {
+  font-size: 2rem;
+  color: #e6a827; 
+}
+
+.footerAbout {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.columnTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.columnTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #e6a827;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkList li {
+  margin-bottom: 0.75rem;
+}
+
+.linkList a, .contactInfo a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.linkList a:hover, .contactInfo a:hover {
+  color: #e6a827; 
+}
+
+.contactInfo {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.footerBottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 1rem;
+}
+
+.copyright {
+  font-size: 0.9rem;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialIcons a {
+  color: #a0a0a0;
+  font-size: 1.3rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.socialIcons a:hover {
+  color: #e6a827;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    padding: 3rem 2rem 1.5rem 2rem;
+  }
+  .footerBottom {
+    flex-direction: column-reverse; 
+    text-align: center;
+  }
+}

@@ -1,0 +1,291 @@
+
+.heroContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  background-size: cover;
+  background-position: center;
+  color: #fff; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; 
+  width: 100%;
+  padding: 2rem 3rem; 
+  gap: 3rem; 
+}
+
+.heroText {
+  flex: 1;
+  max-width: 60%; 
+}
+
+.preHeading {
+  font-size: 0.9rem;
+  color: #e6a827; /* Gold/Orange */
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.advocateName {
+  font-size: 3.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.advocateName .punia {
+  color: #e6a827;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #dcdcdc;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.scheduleButton,
+.learnMoreButton {
+  padding: 0.9rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scheduleButton {
+  background: linear-gradient(145deg, #f0c14b, #dda20a); 
+  color: #1a1a1a;
+  border: none;
+}
+
+.scheduleButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.learnMoreButton {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff; 
+}
+
+.learnMoreButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #e6a827;
+}
+
+.contactInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+  color: #b0b0b0;
+}
+
+.contactInfo span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactInfo svg {
+  color: #e6a827;
+  font-size: 1.1rem;
+}
+
+
+.heroRight {
+  flex: 0.7; 
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.statsCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1.5rem;
+}
+
+.statItem {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.statValue {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #e6a827; 
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #dcdcdc;
+  text-transform: uppercase;
+}
+
+.expertiseSection {
+  margin-top: 1.5rem;
+}
+
+.expertiseHeading {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.expertiseTags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.expertiseTag {
+  background-color: rgba(230, 168, 39, 0.2);
+  color: #e6a827;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid #e6a827;
+}
+
+
+
+@media (max-width: 1024px) {
+  .heroContent {
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .advocateName {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .statValue {
+    font-size: 1.8rem;
+  }
+  .expertiseTag {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContent {
+    flex-direction: column; 
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 3rem;
+  }
+  .heroText {
+    max-width: 100%;
+  }
+  .advocateName {
+    font-size: 2.8rem;
+  }
+  .ctaButtons {
+    justify-content: center;
+  }
+  .contactInfo {
+    justify-content: center; 
+    gap: 1rem;
+  }
+  .heroRight {
+    width: 100%; 
+    padding: 1.5rem;
+  }
+  .statValue {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContainer {
+    height: auto; 
+    min-height: 100vh;
+  }
+  .heroContent {
+    padding: 1.5rem 1rem;
+    gap: 2rem;
+  }
+  .advocateName {
+    font-size: 2.2rem;
+  }
+  .description {
+    font-size: 0.9rem;
+  }
+  .ctaButtons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .scheduleButton,
+  .learnMoreButton {
+    width: 100%; 
+    padding: 0.8rem 1.5rem;
+  }
+  .contactInfo {
+    flex-direction: column; 
+    gap: 0.8rem;
+    font-size: 0.85rem;
+  }
+  .statsCard {
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+  }
+  .statValue {
+    font-size: 1.8rem;
+  }
+  .expertiseHeading {
+    font-size: 1.1rem;
+  }
+  .expertiseTags {
+    gap: 0.5rem;
+  }
+  .expertiseTag {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}

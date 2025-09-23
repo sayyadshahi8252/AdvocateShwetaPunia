@@ -1,0 +1,30 @@
+.maincontent {
+  padding-top: 80px; 
+
+}
+
+
+
+.loadingFallback {
+  text-align: center;
+  padding: 4rem;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+
+    .maincontent {
+  padding-top: 120px; 
+
+}
+}
+
+@media (max-width: 480px) {
+
+     .maincontent {
+  padding-top: 80px; 
+
+}
+
+}

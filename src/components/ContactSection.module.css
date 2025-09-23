@@ -1,0 +1,147 @@
+
+
+.contactContainer {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.infoPanel {
+  flex-basis: 50%;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.mapPanel {
+  flex-basis: 50%;
+  background-color: #1c1e22; 
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box; 
+}
+
+.mapFrame {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px; 
+  overflow: hidden; 
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); 
+}
+
+
+
+.header {
+  margin-bottom: 2rem;
+}
+.preHeading {
+  font-size: 0.9rem;
+  color: #e6a827;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.mainHeading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-top: 0.5rem;
+}
+.subHeading {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 1rem;
+  max-width: 500px;
+}
+.addressBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin: 2rem 0;
+  border-left: 4px solid #e6a827;
+}
+.addressIcon {
+  font-size: 1.5rem;
+  color: #e6a827;
+  margin-top: 4px;
+}
+.addressText {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.contactCard {
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.contactCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.iconWrapper {
+  font-size: 1.5rem;
+  color: #e6a827;
+}
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+.cardInfo {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+
+@media (max-width: 1024px) {
+  .infoPanel { flex-basis: 60%; }
+  .mapPanel { flex-basis: 40%; }
+}
+
+@media (max-width: 900px) {
+  .contactContainer {
+    flex-direction: column;
+  }
+  .infoPanel {
+    padding: 4rem 2rem;
+  }
+  .mapPanel {
+    min-height: 450px; 
+    width: 100%;
+    padding: 1.5rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+  .infoPanel {
+    padding: 3rem 1.5rem;
+  }
+  .mapPanel {
+    padding: 1rem;
+  }
+}
