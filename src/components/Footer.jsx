@@ -52,7 +52,7 @@ const Footer = () => {
       </div>
       <div className={styles.footerBottom}>
         <p className={styles.copyright}>
-          &copy; {new Date().getFullYear()} Advocate Shweta Punia. All Rights Reserved.
+          &copy; {new Date().getFullYear()} © 2025 Advocate Shweta Punia. All rights reserved.
         </p>
         <div className={styles.socialIcons}>
           <a href="#" aria-label="Twitter"><FaTwitter /></a>
