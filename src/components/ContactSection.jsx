@@ -44,7 +44,7 @@ const ContactSection = () => {
         <div className={styles.addressBox}>
           <FaMapMarkerAlt className={styles.addressIcon} />
           <p className={styles.addressText}>
-            3rd floor, I-42, Block I, Karampura West, New Delhi, Delhi, 110015
+            Block I, Karampura West, New Delhi, Delhi, 110015
           </p>
         </div>
 
