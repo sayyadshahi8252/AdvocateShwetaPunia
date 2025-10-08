@@ -10,7 +10,7 @@ const HeroSection = ({
     areasOfExpertise = [ "Civil Law", "Criminal Law", "Corporate Law", "Family Law", "Property Law" ],
     phoneNumber = "+91 70117 43677",
     email = " puniashweta260@gmail.com",
-    location = "Delhi, India",
+    location = "Delhi NCR, India",
     backgroundImage
 }) => {
     return (
